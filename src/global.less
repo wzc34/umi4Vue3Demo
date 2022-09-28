@@ -1,0 +1,164 @@
+/** modal样式 */
+.ant-modal-mask,
+.ant-drawer-mask {
+    background-color: rgba(49, 65, 91, 0.35) !important;
+}
+
+.ant-modal-header {
+    border-top: 4px solid rgba(83, 139, 229, 1);
+
+    .ant-modal-title {
+        font-weight: 700;
+        font-style : normal;
+        font-size  : 16px;
+        color      : #31415B;
+    }
+}
+
+.ant-modal-body {
+    padding-right: 40px !important;
+    min-height   : 460px;
+    max-height   : 760px;
+    overflow     : auto;
+
+}
+
+.ant-modal-confirm {
+    .ant-modal-body {
+        min-height: auto;
+    }
+}
+
+.ant-modal-footer {
+    padding: 20px 40px !important;
+
+    .ant-btn-primary {
+        margin-left: 20px !important;
+    }
+}
+
+.ant-btn {
+    height: 40px !important;
+}
+
+.ant-btn:not(.ant-input-search-button) {
+    min-width       : 100px !important;
+    // border-radius: 4px !important;
+}
+
+.ant-input-affix-wrapper {
+    padding: 0px 11px !important;
+}
+
+input.ant-input {
+    height: 38px !important;
+}
+
+
+.ant-input-search-small {
+
+    .ant-input-wrapper,
+    .ant-input-group {
+        .ant-input-sm {
+            height: 38px !important;
+        }
+    }
+}
+
+.ant-select-selector,
+.ant-select-selection-search-input {
+    min-height: 40px !important;
+}
+
+.ant-select-single .ant-select-selection-item {
+    line-height: 38px !important;
+}
+
+.ant-select-selection-placeholder {
+    line-height: 38px !important;
+}
+
+.ant-form-item-label>label {
+    height: 40px !important;
+}
+
+.ant-radio-group {
+    margin-top: 8px !important;
+}
+
+// 搜索按钮
+.ant-input-search-button {
+    padding: 4px 9px !important;
+}
+
+// header search
+.ant-btn-icon-only {
+    width: 100% !important;
+}
+
+.ant-btn-primary {
+    .anticon.anticon-search {
+        font-size: 20px;
+        position : relative;
+        top      : 4px;
+        left     : 3px;
+    }
+
+}
+
+/*修改滚动条样式*/
+::-webkit-scrollbar {
+    width : 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background   : rgb(239, 239, 239);
+    border-radius: 2px;
+}
+
+::-webkit-scrollbar-thumb {
+    background   : #bfbfbf;
+    border-radius: 8px;
+}
+
+::-webkit-scrollbar-corner {
+    background: #bfbfbf;
+}
+
+//右侧列表空白自适应
+.min-height-card {
+    height: 621px;
+
+    .ant-card-body {
+        height: calc(~"100% - 48px");
+
+        .ant-table-wrapper {
+            height: 100%;
+
+            .ant-spin-nested-loading {
+                height: 100%;
+            }
+
+            .ant-spin-container {
+                height: 100%;
+
+                .ant-table.ant-table-small {
+                    height: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-height: 890px) {
+    .min-height-card {
+        height: calc(100vh - 84px - 60px - 16px - 64px);
+    }
+}
+
+.flexCenter {
+    display        : flex;
+    justify-content: center;
+    align-items    : center;
+}
